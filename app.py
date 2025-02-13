@@ -31,11 +31,11 @@ def upload_file():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
         
-        # Run Phishector.py
+        # Run coraxes.py
         try:
             subprocess.check_call(['python', 'coraxes.py'])
         except subprocess.CalledProcessError as e:
-            return jsonify({'error': 'Error running Phishector.py: {}'.format(str(e))}), 500
+            return jsonify({'error': 'Error running coraxes.py: {}'.format(str(e))}), 500
 
         # Read features_list.txt
         try:
