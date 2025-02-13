@@ -32,7 +32,7 @@ Additional pre-processing functions
 '''
 print(Fore.MAGENTA)
 print(Back.YELLOW)
-print 30*"*", "PHISHECTOR", 30*"*" 
+print 30*"*", "Coraxes", 30*"*" 
 print (Style.RESET_ALL+"")
 test_path = ""
 # test_path=raw_input(Fore.BLUE+"Enter path of folder where mail is present: ")
